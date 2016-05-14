@@ -1,0 +1,321 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\HD_Player_3D.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\HD_Player_3D.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 HD_Player_3D"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "HD_Player_3D，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_HD_PLAYER_3D_DIALOG DIALOGEX 0, 0, 378, 273
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "HD_Player_3D"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "关闭",IDOK,332,256,41,14
+    PUSHBUTTON      "打开",IDC_BUTTON_OPEN,44,256,41,14
+    PUSHBUTTON      "播放",IDC_BUTTON_PLAY,167,256,41,14
+    PUSHBUTTON      "停止",IDC_BUTTON_STOP,208,256,41,14
+    PUSHBUTTON      "全屏",IDC_BUTTON_FULLSCREEN,249,256,41,14
+    PUSHBUTTON      "设置",IDC_BUTTON_SET,290,256,41,14
+    CONTROL         "",IDC_SLIDER_POS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,4,242,370,12
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,4,4,366,206
+    EDITTEXT        IDC_EDIT_INFO,5,215,368,15,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_BUFFER,"msctls_progress32",WS_BORDER,4,230,370,10
+    PUSHBUTTON      "缓冲",IDC_BUTTON_BUFFER,126,256,41,14
+    PUSHBUTTON      "网络",IDC_BUTTON_NETWORK,3,256,41,14
+    GROUPBOX        "",IDC_STATIC,4,209,370,46
+    PUSHBUTTON      "列表",IDC_BUTTON_LIST,85,256,41,14
+END
+
+IDD_DIALOG_NETWORK DIALOGEX 0, 0, 450, 188
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_SERVER,80,22,88,18,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_USER,80,43,88,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,80,64,88,18,ES_AUTOHSCROLL
+    CTEXT           "Server",IDC_STATIC,22,27,47,18
+    CTEXT           "User",IDC_STATIC,22,48,47,18
+    CTEXT           "Password",IDC_STATIC,22,69,47,18
+    DEFPUSHBUTTON   "Login",IDC_BUTTON_LOGIN,22,124,70,19
+    PUSHBUTTON      "Register",IDC_BUTTON_REGISTER,22,150,145,19
+    GROUPBOX        "Network",IDC_STATIC_NET,10,6,180,173,BS_CENTER
+    CONTROL         "",IDC_LIST_FILE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,201,16,232,84
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,201,104,232,16
+    PUSHBUTTON      "Download",IDC_BUTTON_DOWNLOAD,387,124,46,19
+    EDITTEXT        IDC_EDIT_SAVEPATH,240,124,142,19,ES_AUTOHSCROLL
+    GROUPBOX        "Download",IDC_STATIC_DOWNLOAD,195,6,242,173,BS_CENTER
+    CTEXT           "SavePath:",IDC_STATIC,201,128,35,18
+    PUSHBUTTON      "Save As ...",IDC_BUTTON_SAVEAS,201,150,231,19
+    PUSHBUTTON      "Logout",IDC_BUTTON_LOGOUT,98,124,70,19
+END
+
+IDD_DIALOG_REGISTER DIALOGEX 0, 0, 223, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_USER1,95,23,95,21,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD1,95,52,95,21,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD1_CONFORM,95,81,95,21,ES_AUTOHSCROLL
+    CTEXT           "User",IDC_STATIC,31,30,47,21
+    CTEXT           "Password",IDC_STATIC,31,59,47,21
+    CTEXT           "Conform Password",IDC_STATIC,31,84,47,21
+    DEFPUSHBUTTON   "Conform",IDC_BUTTON_CONFORM,38,121,152,24
+END
+
+IDD_DIALOG_CONNECT DIALOGEX 0, 0, 316, 103
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Server Address",IDC_STATIC,7,7,302,90,BS_CENTER
+    EDITTEXT        IDC_EDIT_SERVERADDRESS,14,40,213,23,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Connect",IDC_BUTTON_CONNECT,238,40,62,23
+END
+
+IDD_DIALOG_FILELIST DIALOGEX 0, 0, 256, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "确定",IDOK,178,115,58,24
+    PUSHBUTTON      "取消",IDCANCEL,178,151,58,24
+    CONTROL         "",IDC_LIST_FILELIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,160,168
+    DEFPUSHBUTTON   "播放",IDC_BUTTON_PLAY,178,79,58,24
+    PUSHBUTTON      "上移",IDC_BUTTON_LIST_UP,178,7,58,24
+    PUSHBUTTON      "下移",IDC_BUTTON_LIST_DOWN,178,43,58,24
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "HD_Player_3D.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "HD_Player_3D.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_HD_PLAYER_3D_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 374
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_DIALOG_NETWORK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 443
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_DIALOG_REGISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DIALOG_CONNECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_DIALOG_FILELIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_BKG          BITMAP                  "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_HD_PLAYER_3D_CONFORM HTML                    "HD_Player_3D_Conform.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 HD_Player_3D(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\HD_Player_3D.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
